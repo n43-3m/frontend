@@ -1,73 +1,64 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Vite and tanstack router
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ready to use template for Vite and tanstack router with biomeJs.
 
-## React Compiler
+## Tools and Technologies
+- Vite 
+- react
+- typescript
+- tailwindcss
+- tanstack router
+- biomeJs
+- pnpm
+- lint-staged
+- husky
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<!-- - <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40" title="Vite: A build tool that provides a faster and leaner build for modern web projects."> | A build tool that provides a faster and leaner build for modern web projects.                                  |
+| React          | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" alt="React" width="40" height="40" title="React: A JavaScript library for building user interfaces.">         | A JavaScript library for building user interfaces.                                                               |
+| TailwindCSS    | <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS" width="40" height="40" title="TailwindCSS: A utility-first CSS framework for building custom designs without leaving your HTML."> | A utility-first CSS framework for building custom designs without leaving your HTML.                                 |
+| TanStack Router | <img src="https://tanstack.com/images/logos/logo-color-600.png" alt="TanStack Router" width="40" height="40" title="TanStack Router: A powerful and flexible routing library for React."> | A powerful and flexible routing library for React.                                                                 | -->
 
-## Expanding the ESLint configuration
+## Default Routes
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This starter kit comes with a default route:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Root Route (`/`)**: Displays a simple message "its working!" in the center of the screen.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository and install the dependencies:
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/n43-3m/frontend.git
+   cd frontend-starter-kit-vite-react
+2. **Install the Dependencies:**
+
+   ```bash
+   pnpm install
+   ```
+
+## Running the Project
+
+To run the project, use the following command:
+
+```bash
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+This will start the Vite development server on `http://localhost:5173`.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Building the Project
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+To build the project, use the following command:
+
+```bash
+pnpm build
 ```
+
+This will generate a production-ready build in the `dist` folder.
+
+

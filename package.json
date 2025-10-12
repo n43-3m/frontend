@@ -14,7 +14,7 @@
 	},
 	"lint-staged": {
 		"*.{ts,tsx,js,jsx}": " pnpm biomecheck",
-		"*.{json,md,css,scss,html,yml,yaml}": "pnpm format"
+		"*.{json,css,scss,html}": "pnpm format"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "4.1.14",
