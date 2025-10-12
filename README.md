@@ -26,6 +26,11 @@ This starter kit comes with a default route:
 
 - **Root Route (`/`)**: Displays a simple message "its working!" in the center of the screen.
 
+## Important:
+
+- after cloning the repository, make sure to remove the `.git` folder and initialize a new git repository.
+- make sure to update the `name` and `version` fields in the `package.json` file.
+
 ## Installation
 
 Clone the repository and install the dependencies:
@@ -34,11 +39,22 @@ Clone the repository and install the dependencies:
 
    ```bash
    git clone https://github.com/n43-3m/frontend.git
-   cd frontend-starter-kit-vite-react
+   cd frontend
 2. **Install the Dependencies:**
 
    ```bash
-   pnpm install
+   pnpm i
+   ```
+3. **remove the `.git` folder and initialize a new git repository :**
+   ### Linux/MacOS:
+    ```bash
+    rm -rf .git
+    git init
+    ```
+   ### Windows:
+   ```bash
+   rmdir /s .git
+   git init
    ```
 
 ## Running the Project
