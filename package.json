@@ -7,11 +7,14 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "biome lint --write",
-		"lintfile": "biome format --write ",
 		"format": "biome format --write",
-		"formatfile": "biome format --write",
 		"biomecheck": "biome check --write",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"*.{ts,tsx,js,jsx}": " pnpm biomecheck",
+		"*.{json,md,css,scss,html,yml,yaml}": "pnpm format"
 	},
 	"dependencies": {
 		"@tailwindcss/vite": "4.1.14",
@@ -26,6 +29,8 @@
 		"@types/react-dom": "^19.1.9",
 		"@vitejs/plugin-react": "^5.0.4",
 		"globals": "^16.4.0",
+		"husky": "9.1.7",
+		"lint-staged": "16.2.4",
 		"typescript": "~5.9.3",
 		"vite": "^7.1.7"
 	}
