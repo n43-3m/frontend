@@ -37,6 +37,11 @@ Clone the repository and install the dependencies:
 
 1. **Clone the Repository:**
 
+   ##### if u already have the project folder (make sure it is empty)
+   ```bash
+   git clone https://github.com/n43-3m/frontend.git
+   ```
+   ##### if u don't have the project folder. it will clone the project in frontend folder.
    ```bash
    git clone https://github.com/n43-3m/frontend.git
    cd frontend
