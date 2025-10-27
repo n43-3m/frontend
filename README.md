@@ -1,24 +1,21 @@
 
-# Vite and tanstack router
+# Frontend Starter Kit
 
 
 ready to use template for Vite and tanstack router with biomeJs.
 
 ## Tools and Technologies
-- Vite 
-- react
-- typescript
-- tailwindcss
-- tanstack router
-- biomeJs
-- pnpm
-- lint-staged
-- husky
+- `Vite` (build tool)
+- `react` (frontend framework)
+- `typescript` (js compiler)
+- `tailwindcss` (css framework)
+- `tanstack` router (routing library)
+- `biomeJs` (linter)
+- `pnpm` (package manager)
+- `git` (version control)
+- `lint-staged` (linter)
+- `husky` (git hooks)
 
-<!-- - <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40" title="Vite: A build tool that provides a faster and leaner build for modern web projects."> | A build tool that provides a faster and leaner build for modern web projects.                                  |
-| React          | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" alt="React" width="40" height="40" title="React: A JavaScript library for building user interfaces.">         | A JavaScript library for building user interfaces.                                                               |
-| TailwindCSS    | <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="TailwindCSS" width="40" height="40" title="TailwindCSS: A utility-first CSS framework for building custom designs without leaving your HTML."> | A utility-first CSS framework for building custom designs without leaving your HTML.                                 |
-| TanStack Router | <img src="https://tanstack.com/images/logos/logo-color-600.png" alt="TanStack Router" width="40" height="40" title="TanStack Router: A powerful and flexible routing library for React."> | A powerful and flexible routing library for React.                                                                 | -->
 
 ## Default Routes
 
